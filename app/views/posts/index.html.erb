@@ -1,0 +1,6 @@
+<% @posts.each do |post| %> <!-- for each |post| in side the @posts instance varaible -->
+	<h2><%= post.title %></h2>
+	<div><%= truncate(post.body, :length => 35) %></div> <!-- 35 character snippet of the bdy text -->
+	<br>
+	<%= link_to "Read Post", post %>
+<% end %>
