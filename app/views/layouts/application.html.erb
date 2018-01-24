@@ -9,10 +9,14 @@
   </head>
 
   <body>
-
-  	<%= link_to "Home", root_path %>
-  	<%= link_to "New Post", new_post_path %>
-
+  	<h1>Considerable Blog</h1>
+  	<h4>A SIMPLE BLOG FOR YOU AND I</h4>
+  		<div class="main">
+  		<div class="homelink"><%= link_to "Home", root_path %></div>
+  		<div class="newlink"><%= link_to "New Post", new_post_path %></div>
+  		
     <%= yield %>
+    	
+    </div>
   </body>
 </html>
